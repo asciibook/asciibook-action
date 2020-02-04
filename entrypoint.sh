@@ -1,4 +1,4 @@
 #!/bin/sh
 
 echo 'test'
-docker run -v $RUNNER_WORKSPACE:/asciibook asciibook/asciibook ls -lR
+docker run -v $RUNNER_WORKSPACE:/asciibook asciibook/asciibook cat $INPUT_SOURCE
