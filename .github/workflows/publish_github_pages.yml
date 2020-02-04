@@ -18,6 +18,7 @@ jobs:
       - name: Build and Publish
         run: |
           docker run -v $(pwd):/asciibook asciibook/asciibook asciibook build README.adoc --format html
+          ls -R
           cd build/html
           touch .nojekyll
 
