@@ -1,5 +1,4 @@
 #!/bin/sh
 
-echo 'test'
-env
-docker run -v $RUNNER_WORKSPACE:/asciibook asciibook/asciibook pwd && ls -la
+docker run -v $RUNNER_WORKSPACE:/asciibook asciibook/asciibook asciibook build $INPUT_SOURCE
+ls -lR
