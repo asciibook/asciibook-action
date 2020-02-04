@@ -14,4 +14,4 @@ jobs:
         with:
           source: README.adoc
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          DEPLOY_TOKEN: ${{secrets.DEPLOY_TOKEN}}
