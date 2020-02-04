@@ -1,3 +1,4 @@
 #!/bin/sh
 
-docker run -v $GITHUB_WORKSPACE:/asciibook asciibook/asciibook ls -la
+env
+docker run -v /home/runner/work/asciibook-action/asciibook-action:/asciibook asciibook/asciibook ls -la
