@@ -18,8 +18,7 @@ jobs:
       - name: Build and Publish
         run: |
           docker run -v $(pwd):/asciibook asciibook/asciibook asciibook build README.adoc --format html
-          ls -lR
-          whoami
+          sudo chown ${whoami} build
           cd build/html
           touch .nojekyll
 
