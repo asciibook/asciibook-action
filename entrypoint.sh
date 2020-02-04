@@ -1,5 +1,4 @@
 #!/bin/sh
 
-echo 'test4'
-env
-docker run -v $RUNNER_WORKSPACE:/asciibook asciibook/asciibook ls -lR
+REPO_NAME="$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)"
+docker run -v $RUNNER_WORKSPACE/$REPO_NAME:/asciibook asciibook/asciibook asciibook build $INPUT_SOURCE
