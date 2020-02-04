@@ -1,3 +1,5 @@
 FROM docker:19
 
-ENTRYPOINT ["entrypoint.sh"]
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
