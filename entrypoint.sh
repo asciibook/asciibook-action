@@ -1,5 +1,4 @@
 #!/bin/sh
 
-echo $(pwd)
-ls -la
-docker run -v $(pwd):/asciibook asciibook/asciibook ls -la
+env
+docker run -v $RUNNER_WORKSPACE:/asciibook asciibook/asciibook ls -la
