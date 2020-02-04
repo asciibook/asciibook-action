@@ -1,0 +1,12 @@
+name: 'Asciibook Action'
+description: 'Build and publish Asciibook'
+inputs:
+  source:
+    description: 'Build source'
+    required: true
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.source }}
