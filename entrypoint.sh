@@ -12,6 +12,6 @@ git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 git add .
 git commit -m 'asciibook build'
-git push --force https://${GITHUB_ACTOR}${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git master:gh-pages
+git push --force https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git master:gh-pages
 rm -fr .git
 cd ../..
