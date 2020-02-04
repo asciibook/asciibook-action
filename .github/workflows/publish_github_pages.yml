@@ -8,6 +8,8 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-18.04
+    container:
+      image: asciibook/asciibook
     steps:
       - uses: actions/checkout@v2
       #- uses: ./
@@ -16,8 +18,6 @@ jobs:
       #  env:
       #    DEPLOY_TOKEN: ${{secrets.DEPLOY_TOKEN}}
       - name: Build and Publish
-        container:
-          image: asciibook/asciibook
         run: |
           pwd
           ls
