@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - uses: asciibook/asciibook-action@master
+      - uses: actions/asciibook-action
         with:
           source: README.adoc
