@@ -10,8 +10,15 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - uses: ./
-        with:
-          source: README.adoc
-        env:
-          DEPLOY_TOKEN: ${{secrets.DEPLOY_TOKEN}}
+      #- uses: ./
+      #  with:
+      #    source: README.adoc
+      #  env:
+      #    DEPLOY_TOKEN: ${{secrets.DEPLOY_TOKEN}}
+      - name: Build and Publish
+        container:
+          image: asciibook/asciibook
+        run: |
+          pwd
+          ls
+          env
