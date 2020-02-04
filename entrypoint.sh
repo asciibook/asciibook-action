@@ -1,4 +1,5 @@
 #!/bin/sh
 
-ls -a
-env
+docker run -v $(pwd):/asciibook asciibook/asciibook asciibook build $INPUT_SOURCE
+
+ls
