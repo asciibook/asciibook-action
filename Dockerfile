@@ -1,6 +1,6 @@
 FROM docker:19
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apk add --no-cache \
   git
 
 COPY entrypoint.sh /entrypoint.sh
