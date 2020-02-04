@@ -1,4 +1,4 @@
 #!/bin/sh
 
-ls
+ls -a
 env
