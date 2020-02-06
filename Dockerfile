@@ -1,7 +1,4 @@
-FROM docker:19
-
-RUN apk add --no-cache \
-  git
+FROM asciibook/asciibook
 
 COPY entrypoint.sh /entrypoint.sh
 
